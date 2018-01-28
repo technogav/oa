@@ -1,0 +1,436 @@
+page-home {
+    .toolbar-background {
+        background:rgba(26, 25, 25, 0.7);;
+        height:100px;
+        padding-top:0;
+        border-bottom: 2px solid navy;
+      }
+
+    /*   ion-grid{
+        
+            width:100%;
+            margin-left:0 !important;
+            margin-right:0 !important;
+ 
+    } */
+    .header-title{
+        color:white;
+    }
+     #hero-overlay{
+        width: 100%;
+        height:500px;
+        padding-top:6%;
+        background: transparent;
+        text-align: center;
+        vertical-align: middle;
+        position:relative;
+        top:0;
+        left:0;
+
+        h2{
+            font-size: 3em;
+            line-height:64px;
+        }
+    } 
+    .hero-title{height:100%;position:absolute; right:0;line-height:25px;padding-top:15px;margin-right:7%;
+        h1{
+            font-size: 60px;
+            color:#fff;
+            font-weight: 900;
+            letter-spacing: 2px;
+
+            
+        }
+    }
+    .hero-banner-container{margin-top:15%;}
+
+    .hero-word-1{
+        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-name: fade_in;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-delay: 4s;
+        -webkit-animation-iteration-count: 1;
+        opacity:0;
+
+        
+        /* Standard syntax */
+        animation-fill-mode: forwards;
+        animation-name: fade_in;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-delay: 4s;
+        animation-iteration-count: 1;
+        
+    }
+    .hero-word-2{
+        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-name: fade_in;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-delay: 5.5s;
+        -webkit-animation-iteration-count: 1;
+
+        
+        /* Standard syntax */
+        animation-fill-mode: forwards;
+        animation-name: fade_in;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-delay: 5s;
+        animation-iteration-count: 1;
+        opacity:0;
+        
+    }
+    .hero-buttons{
+        width:100%;
+        margin-top:5%;
+        height:150px;
+        padding-left:10%;
+        opacity:0;
+        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-name: fade_in;
+        -webkit-animation-duration: 1.4s;
+        -webkit-animation-timing-function: ease-out;
+        -webkit-animation-delay: 6s;
+
+
+        /* Standard syntax */
+        animation-fill-mode: forwards;
+        animation-name: fade_in;
+        animation-duration: 1.4s;
+        animation-timing-function: ease-out;
+        animation-delay: 6s;
+
+        button{
+            width:200px;
+            margin-right:5px;
+        }
+    }
+    /* Safari 4.0 - 8.0 */
+    .absolute-container{
+        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-name: rotation;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function: ease-out;
+        -webkit-animation-delay: 2s;
+        -webkit-animation-iteration-count: 1;
+
+        
+        /* Standard syntax */
+        animation-fill-mode: forwards;
+        animation-name: rotation;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 2s;
+        animation-iteration-count: 1;
+        
+        position:absolute; left:0; height:100px; width:100px;
+        div{
+            height:200px;width:12vw;
+        }
+        
+    } 
+    .content{
+        background-image:url('../../assets/imgs/openarmsHero.jpg');
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center;
+       
+    }
+    .right-tile-container{
+        margin:5px;
+        padding:10px;
+        height:100px;
+        
+    }
+    .left-tile-container{
+        margin:5px;
+        padding:10px;
+        height:100px;
+        
+    }
+    .nudder-tile-container{
+        margin:5px;
+        padding:10px;
+        height:100px;
+        background:red;
+    }
+    .animation-container{
+        position:relative; 
+        left:-17.5%; 
+        height:200px;
+        width:80vw;
+        
+    }
+
+    .sm-hero-title{
+        display:none;
+    }
+
+
+    /////////////////////////////////animations
+
+    /* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color:red; left: 0; }
+    100% {background-color:red; left:100%; }
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red; left: 0;}
+    100% {background-color:red; left:10%}
+}
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg); 
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+
+    from{
+        left: 0;
+    }
+    to{
+        left:63%
+    }
+}
+@keyframes rotation {
+    from {
+            transform: rotate(0deg);
+    }
+    to {
+            transform: rotate(359deg);
+    }
+    from{
+        left: 0;
+    }
+    to{
+        left:63%
+    }
+}
+
+
+    @keyframes fade_in {
+        from {
+                opacity: 0
+        }
+        to {
+            opacity:1;
+        }
+        
+    }
+
+
+
+
+
+
+
+
+    /////////////////media queries
+
+    /* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .animation-container{
+        position:relative; 
+        left:-17.5%; 
+        height:200px;
+        width:80vw;
+        
+    }
+    }
+    
+    /* Smartphones (landscape) ----------- */
+    @media only screen and (min-width : 321px) and (max-width: 480px) {
+        .animation-container{
+            position:relative; 
+            left:-30%; 
+            height:200px;
+            width:80vw;
+            
+        }
+
+        .hero-buttons{
+padding-left:0%;
+        }
+    }
+    
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 320px) {
+    /* Styles */
+    }
+
+    /* Desktops and laptops ----------- */
+    @media only screen  and (min-width : 1424px) {
+        .hero-title{
+            margin-right:7%; 
+            padding-top:5px;
+        }
+        .animation-container{
+            
+        } 
+    }
+
+    @media only screen  and (min-width : 1224px) and (max-width:1424px){
+        .hero-title{
+            margin-right:4%; 
+            padding-top:0px;
+        }
+        .animation-container{
+           
+        } 
+    }
+
+    @media only screen  and (min-width : 1124px) and (max-width:1224px){
+        .hero-title{
+            margin-right:4%; 
+            padding-top:5px;
+           
+        }
+    }
+        
+
+    @media only screen  and (min-width : 1124px) and (max-width:1224px){
+        
+     
+        .hero-title{
+            margin-right:0%; 
+            padding-top:0px;
+            line-height:12px;margin-bottom:2px;
+            
+        }
+
+        .absolute-container{
+            padding-top:15px;
+            div{
+                width:14vw;
+            }
+            
+        }
+
+    }
+
+    @media only screen  and (max-width : 1123px){
+        
+     
+        .hero-title{
+            display:none;
+        }
+        sm-hero-title{
+            display:inline-block;
+        }
+        .absolute-container{
+            padding-top:15px;
+            div{
+                width:14vw;
+            }
+        } 
+        .hero-buttons{
+            padding-left: 60px;
+        }
+
+        @-webkit-keyframes rotation {
+            from {-webkit-transform: rotate(0deg); }
+            to {-webkit-transform: rotate(359deg);}
+            from{left: 0;}
+            to{left:63%}
+        }
+        @keyframes rotation {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(359deg);}
+            from{left: 0;}to{left:78%}
+        }
+    }
+
+    @media only screen  and (max-width : 875px){
+        .absolute-container{
+            padding-top:15px;
+            div{
+                width:25vw;
+            }
+        } 
+     
+    }
+
+
+
+    @media only screen  and (min-width : 1024px) and (max-width:1124){
+        .hero-title{
+            margin-right:6%; 
+            padding-top:5px;
+            
+        }
+
+    }
+
+    @media only screen  and (min-width : 764px) and (max-width:1024px) {
+        
+        .hero-title{
+            display:none;
+        }
+
+    }
+    
+    /* Large screens ----------- */
+    @media only screen  and (min-width : 1824px) {
+    /* Styles */
+    }
+
+
+
+    
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        
+    }
+    
+    /* iPads (landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Styles */
+    }
+    
+    /* iPads (portrait) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Styles */
+    }
+
+    /**********
+    iPad 3
+    **********/
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+    }
+    
+    
+    
+    /* iPhone 4 ----------- */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+    }
+    
+    /* iPhone 5 ----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    /* iPhone 6 ----------- */
+    @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    
+    /* iPhone 6+ ----------- */
+    @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+
+    
+
+    
+    @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+    }
+}
